@@ -78,6 +78,10 @@ class BaseViewController:UIViewController,UIGestureRecognizerDelegate{
     }
     
     @objc private func backAction(){
+        if isHWPanModal{
+            self.dismiss(animated: true) {}
+            return
+        }
         self.navigationController?.popViewController(animated: true)
     }
 
