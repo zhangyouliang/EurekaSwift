@@ -15,7 +15,7 @@ class RowsExampleViewController: FormViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-            
+
         self.tableView.backgroundColor = .cyan
         // 开启导航辅助，并且遇到被禁用的行就隐藏导航
         navigationOptions = RowNavigationOptions.Enabled.union(.Disabled)
@@ -42,16 +42,22 @@ class RowsExampleViewController: FormViewController {
                 cell.textLabel?.textColor = .red // 文本颜色
                 cell.textField.font = UIFont.systemFont(ofSize: 15) // 字体大小
                 cell.textField.textColor = .yellow // 文本颜色
-            }).onChange({ (row) in
-                
-            }).onCellSelection({ (cell, row) in
-                // 点击时
-                
             })
+            
             <<< NameRow(){
-                $0.title = "Name Row"
-                $0.placeholder = "Add Name Row"
-            }
+                $0.title = "禁用的 Modal Row(选择省份,或者地理位置)"
+                $0.disabled = true
+            }.onCellSelection({ (cell, row) in
+                self.presentPanModal(FullScreenViewController2())
+                
+            }).cellSetup({ (cell, row) in
+                cell.textLabel?.font = UIFont.systemFont(ofSize: 15)
+                cell.textField.tintColor = .red // 光标颜色
+            }).cellUpdate({ (cell, row) in
+                cell.textLabel?.textColor = .red // 文本颜色
+                cell.textField.font = UIFont.systemFont(ofSize: 15) // 字体大小
+                cell.textField.textColor = .yellow // 文本颜色
+            })
             <<< SwitchRow("SwitchRow") { row in      // 初始化函数
                     row.title = "The title"
                 }.onChange { row in
@@ -74,7 +80,7 @@ class RowsExampleViewController: FormViewController {
                 $0.title = "LocationRow"
                 $0.value = CLLocation(latitude: -34.9124, longitude: -56.1594)
             }
-        +++ Section("s1"){ section in // 文字不显示
+        +++ Section("Section3"){ section in // 自定义 header之后,文字就不显示了
             var header = HeaderFooterView<UIView>(.callback({ () -> UIView in
                 let view = UIView(frame: .zero)
                 view.backgroundColor = .gray

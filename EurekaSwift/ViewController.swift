@@ -12,6 +12,7 @@ class ViewController: FormViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         // Do any additional setup after loading the view.
         form +++
             Section()
@@ -32,7 +33,7 @@ class ViewController: FormViewController {
             <<< ButtonRow("全屏跳转到 NavViewController(支持(右滑,下滑)返回手势)") {
                 $0.title = $0.tag
             }.onCellSelection({ (cell, roe) in
-                self.presentPanModal(FullScreenViewController2())
+                self.presentPanModal(FullScreenNavController())
             })
             <<< ButtonRow("全屏跳转到 ViewController(支持(右滑,下滑)返回手势)") {
                 $0.title = $0.tag

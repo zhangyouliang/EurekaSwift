@@ -10,8 +10,9 @@
         <!--Navigation Controller-->
         <scene sceneID="tPj-qJ-W4j">
             <objects>
-                <navigationController navigationBarHidden="YES" id="7Rp-Zx-4u3" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="J6A-M0-bRI">
+                <navigationController id="7Rp-Zx-4u3" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="J6A-M0-bRI">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>

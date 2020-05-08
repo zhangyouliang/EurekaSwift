@@ -30,6 +30,8 @@
 		E0DE6C45246554CF0082E627 /* 3.png in Resources */ = {isa = PBXBuildFile; fileRef = E0DE6C40246554CF0082E627 /* 3.png */; };
 		E0DE6C46246554CF0082E627 /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = E0DE6C41246554CF0082E627 /* 2.png */; };
 		E0DE6C47246554CF0082E627 /* 5.png in Resources */ = {isa = PBXBuildFile; fileRef = E0DE6C42246554CF0082E627 /* 5.png */; };
+		E0DE6C4D24655BB10082E627 /* UINavigationController+FDFullscreenPopGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = E0DE6C4C24655BB10082E627 /* UINavigationController+FDFullscreenPopGesture.m */; };
+		E0DE6C53246568C60082E627 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DE6C52246568C60082E627 /* Common.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +60,10 @@
 		E0DE6C40246554CF0082E627 /* 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3.png; sourceTree = "<group>"; };
 		E0DE6C41246554CF0082E627 /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2.png; sourceTree = "<group>"; };
 		E0DE6C42246554CF0082E627 /* 5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 5.png; sourceTree = "<group>"; };
+		E0DE6C4B24655BB10082E627 /* UINavigationController+FDFullscreenPopGesture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+FDFullscreenPopGesture.h"; sourceTree = "<group>"; };
+		E0DE6C4C24655BB10082E627 /* UINavigationController+FDFullscreenPopGesture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+FDFullscreenPopGesture.m"; sourceTree = "<group>"; };
+		E0DE6C5124655C540082E627 /* EurekaSwift-bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EurekaSwift-bridging-Header.h"; sourceTree = "<group>"; };
+		E0DE6C52246568C60082E627 /* Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 		F09513A9AFD84C21DEECD515 /* Pods-EurekaSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EurekaSwift.release.xcconfig"; path = "Target Support Files/Pods-EurekaSwift/Pods-EurekaSwift.release.xcconfig"; sourceTree = "<group>"; };
 		F6122C90F4D3920345ACA835 /* Pods-EurekaSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EurekaSwift.debug.xcconfig"; path = "Target Support Files/Pods-EurekaSwift/Pods-EurekaSwift.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -85,6 +91,7 @@
 		E0DE6BF72464F1810082E627 = {
 			isa = PBXGroup;
 			children = (
+				E0DE6C5124655C540082E627 /* EurekaSwift-bridging-Header.h */,
 				E0DE6C3D246554B90082E627 /* screenshots */,
 				E0DE6C3B246553C60082E627 /* README.md */,
 				E0DE6C022464F1810082E627 /* EurekaSwift */,
@@ -105,14 +112,17 @@
 		E0DE6C022464F1810082E627 /* EurekaSwift */ = {
 			isa = PBXGroup;
 			children = (
+				E0DE6C4924655BA70082E627 /* Vendors */,
 				E0DE6C2924650C950082E627 /* ViewController */,
 				E0DE6C1D2464FEE10082E627 /* Row */,
 				E0DE6C032464F1810082E627 /* AppDelegate.swift */,
 				E0DE6C052464F1810082E627 /* SceneDelegate.swift */,
+				E0DE6C072464F1810082E627 /* ViewController.swift */,
 				E0DE6C092464F1810082E627 /* Main.storyboard */,
 				E0DE6C0C2464F1850082E627 /* Assets.xcassets */,
 				E0DE6C0E2464F1850082E627 /* LaunchScreen.storyboard */,
 				E0DE6C112464F1850082E627 /* Info.plist */,
+				E0DE6C52246568C60082E627 /* Common.swift */,
 			);
 			path = EurekaSwift;
 			sourceTree = "<group>";
@@ -131,12 +141,11 @@
 		E0DE6C2924650C950082E627 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				E0DE6C3A24654BDB0082E627 /* Modal */,
 				E0DE6C35246545030082E627 /* Base */,
+				E0DE6C3A24654BDB0082E627 /* Modal */,
 				E0DE6C34246544EA0082E627 /* Test */,
 				E0DE6C252465094A0082E627 /* RowsExampleViewController.swift */,
 				E0DE6C2724650C820082E627 /* PopViewController.swift */,
-				E0DE6C072464F1810082E627 /* ViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -176,6 +185,23 @@
 				E0DE6C42246554CF0082E627 /* 5.png */,
 			);
 			path = screenshots;
+			sourceTree = "<group>";
+		};
+		E0DE6C4924655BA70082E627 /* Vendors */ = {
+			isa = PBXGroup;
+			children = (
+				E0DE6C4A24655BB10082E627 /* FDFullscreenPopGesture */,
+			);
+			path = Vendors;
+			sourceTree = "<group>";
+		};
+		E0DE6C4A24655BB10082E627 /* FDFullscreenPopGesture */ = {
+			isa = PBXGroup;
+			children = (
+				E0DE6C4B24655BB10082E627 /* UINavigationController+FDFullscreenPopGesture.h */,
+				E0DE6C4C24655BB10082E627 /* UINavigationController+FDFullscreenPopGesture.m */,
+			);
+			path = FDFullscreenPopGesture;
 			sourceTree = "<group>";
 		};
 		ED2DC092F9BE06AF341DF496 /* Pods */ = {
@@ -315,12 +341,14 @@
 				E0DE6C33246544C20082E627 /* TestGestureViewController.swift in Sources */,
 				E0DE6C2824650C820082E627 /* PopViewController.swift in Sources */,
 				E0DE6C042464F1810082E627 /* AppDelegate.swift in Sources */,
+				E0DE6C53246568C60082E627 /* Common.swift in Sources */,
 				E0DE6C2D246541760082E627 /* BaseViewController.swift in Sources */,
 				E0DE6C37246545240082E627 /* FullScreenNavController.swift in Sources */,
 				E0DE6C212464FFB60082E627 /* LocationRow.swift in Sources */,
 				E0DE6C1A2464FDCB0082E627 /* CustomCell.swift in Sources */,
 				E0DE6C3924654BC50082E627 /* FullScreenViewController2.swift in Sources */,
 				E0DE6C062464F1810082E627 /* SceneDelegate.swift in Sources */,
+				E0DE6C4D24655BB10082E627 /* UINavigationController+FDFullscreenPopGesture.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -474,6 +502,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.whatdy.EurekaSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "EurekaSwift-bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -493,6 +522,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.whatdy.EurekaSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "EurekaSwift-bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

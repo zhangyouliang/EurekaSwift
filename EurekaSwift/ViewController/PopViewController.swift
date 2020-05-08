@@ -12,8 +12,8 @@ import UIKit
 class PopViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = .gray
-        
+        title = "PopViewController"
+        self.view.backgroundColor = .white
         
         let btn = UIButton(frame: CGRect(x: 100, y: 100, width: 200, height: 200))
         self.view.addSubview(btn)

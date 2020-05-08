@@ -73,6 +73,7 @@ public class MapViewController: UIViewController, TypedRowControllerType, MKMapV
     public override func viewDidLoad() {
         super.viewDidLoad()
         view.addSubview(mapView)
+    
 
         mapView.delegate = self
         mapView.addSubview(pinView)

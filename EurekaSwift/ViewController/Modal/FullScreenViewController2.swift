@@ -14,6 +14,8 @@ class FullScreenViewController2: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = .green
+        isHWPanModal = true
+        title = "FullScreenViewController2"
     }
     
     override func topOffset() -> CGFloat {
@@ -35,5 +37,6 @@ class FullScreenViewController2: BaseViewController {
     override func allowScreenEdgeInteractive() -> Bool {
         return true
     }
+    
     
 }

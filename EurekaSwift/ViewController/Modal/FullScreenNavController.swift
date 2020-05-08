@@ -38,10 +38,12 @@ class FullScreenNavController: UINavigationController {
     
 }
 
-fileprivate class FullScreenViewController: UIViewController {
+fileprivate class FullScreenViewController: BaseViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        isHWPanModal = true
+
         
         view.backgroundColor = .white
         title = "Full Screen"

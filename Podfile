@@ -9,4 +9,5 @@ target 'EurekaSwift' do
 
   pod 'Eureka'
   pod 'HWPanModal', '~> 0.6.0'
+  pod 'SnapKit', '~> 5.0.0' # 跟Masonry一样是用来设置约束的，swift版
 end
