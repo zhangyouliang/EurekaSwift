@@ -1,0 +1,6 @@
+framework module Pods_EurekaSwift {
+  umbrella header "Pods-EurekaSwift-umbrella.h"
+
+  export *
+  module * { export * }
+}

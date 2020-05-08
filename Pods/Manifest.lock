@@ -1,0 +1,20 @@
+PODS:
+  - Eureka (5.2.1)
+  - HWPanModal (0.6.7)
+
+DEPENDENCIES:
+  - Eureka
+  - HWPanModal (~> 0.6.0)
+
+SPEC REPOS:
+  trunk:
+    - Eureka
+    - HWPanModal
+
+SPEC CHECKSUMS:
+  Eureka: c883105488e05bc65539f583246ecf9657cabbfe
+  HWPanModal: 8ce3489c30e2268dafc50acdcde50d34f75f35aa
+
+PODFILE CHECKSUM: 5ebe5596e3cf535112960c14cfc7ee70e4920e83
+
+COCOAPODS: 1.8.4

@@ -3,19 +3,37 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D782CE33AD45120487DF4760 /* Pods_EurekaSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4082E3F4C725B5D34F7D61D /* Pods_EurekaSwift.framework */; };
 		E0DE6C042464F1810082E627 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DE6C032464F1810082E627 /* AppDelegate.swift */; };
 		E0DE6C062464F1810082E627 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DE6C052464F1810082E627 /* SceneDelegate.swift */; };
 		E0DE6C082464F1810082E627 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DE6C072464F1810082E627 /* ViewController.swift */; };
 		E0DE6C0B2464F1810082E627 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0DE6C092464F1810082E627 /* Main.storyboard */; };
 		E0DE6C0D2464F1850082E627 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0DE6C0C2464F1850082E627 /* Assets.xcassets */; };
 		E0DE6C102464F1850082E627 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0DE6C0E2464F1850082E627 /* LaunchScreen.storyboard */; };
+		E0DE6C182464FD770082E627 /* CustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E0DE6C172464FD770082E627 /* CustomCell.xib */; };
+		E0DE6C1A2464FDCB0082E627 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DE6C192464FDCB0082E627 /* CustomCell.swift */; };
+		E0DE6C1C2464FDEB0082E627 /* CustomRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DE6C1B2464FDEB0082E627 /* CustomRow.swift */; };
+		E0DE6C212464FFB60082E627 /* LocationRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DE6C202464FFB60082E627 /* LocationRow.swift */; };
+		E0DE6C262465094A0082E627 /* RowsExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DE6C252465094A0082E627 /* RowsExampleViewController.swift */; };
+		E0DE6C2824650C820082E627 /* PopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DE6C2724650C820082E627 /* PopViewController.swift */; };
+		E0DE6C2D246541760082E627 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DE6C2C246541760082E627 /* BaseViewController.swift */; };
+		E0DE6C33246544C20082E627 /* TestGestureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DE6C32246544C20082E627 /* TestGestureViewController.swift */; };
+		E0DE6C37246545240082E627 /* FullScreenNavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DE6C36246545240082E627 /* FullScreenNavController.swift */; };
+		E0DE6C3924654BC50082E627 /* FullScreenViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DE6C3824654BC50082E627 /* FullScreenViewController2.swift */; };
+		E0DE6C3C246553C60082E627 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = E0DE6C3B246553C60082E627 /* README.md */; };
+		E0DE6C43246554CF0082E627 /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = E0DE6C3E246554CE0082E627 /* 1.png */; };
+		E0DE6C44246554CF0082E627 /* 4.png in Resources */ = {isa = PBXBuildFile; fileRef = E0DE6C3F246554CE0082E627 /* 4.png */; };
+		E0DE6C45246554CF0082E627 /* 3.png in Resources */ = {isa = PBXBuildFile; fileRef = E0DE6C40246554CF0082E627 /* 3.png */; };
+		E0DE6C46246554CF0082E627 /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = E0DE6C41246554CF0082E627 /* 2.png */; };
+		E0DE6C47246554CF0082E627 /* 5.png in Resources */ = {isa = PBXBuildFile; fileRef = E0DE6C42246554CF0082E627 /* 5.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B4082E3F4C725B5D34F7D61D /* Pods_EurekaSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EurekaSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0DE6C002464F1810082E627 /* EurekaSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EurekaSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0DE6C032464F1810082E627 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E0DE6C052464F1810082E627 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +42,24 @@
 		E0DE6C0C2464F1850082E627 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E0DE6C0F2464F1850082E627 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E0DE6C112464F1850082E627 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E0DE6C172464FD770082E627 /* CustomCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomCell.xib; sourceTree = "<group>"; };
+		E0DE6C192464FDCB0082E627 /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
+		E0DE6C1B2464FDEB0082E627 /* CustomRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomRow.swift; sourceTree = "<group>"; };
+		E0DE6C202464FFB60082E627 /* LocationRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationRow.swift; sourceTree = "<group>"; };
+		E0DE6C252465094A0082E627 /* RowsExampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowsExampleViewController.swift; sourceTree = "<group>"; };
+		E0DE6C2724650C820082E627 /* PopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopViewController.swift; sourceTree = "<group>"; };
+		E0DE6C2C246541760082E627 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		E0DE6C32246544C20082E627 /* TestGestureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestGestureViewController.swift; sourceTree = "<group>"; };
+		E0DE6C36246545240082E627 /* FullScreenNavController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullScreenNavController.swift; sourceTree = "<group>"; };
+		E0DE6C3824654BC50082E627 /* FullScreenViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullScreenViewController2.swift; sourceTree = "<group>"; };
+		E0DE6C3B246553C60082E627 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		E0DE6C3E246554CE0082E627 /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
+		E0DE6C3F246554CE0082E627 /* 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 4.png; sourceTree = "<group>"; };
+		E0DE6C40246554CF0082E627 /* 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3.png; sourceTree = "<group>"; };
+		E0DE6C41246554CF0082E627 /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2.png; sourceTree = "<group>"; };
+		E0DE6C42246554CF0082E627 /* 5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 5.png; sourceTree = "<group>"; };
+		F09513A9AFD84C21DEECD515 /* Pods-EurekaSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EurekaSwift.release.xcconfig"; path = "Target Support Files/Pods-EurekaSwift/Pods-EurekaSwift.release.xcconfig"; sourceTree = "<group>"; };
+		F6122C90F4D3920345ACA835 /* Pods-EurekaSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EurekaSwift.debug.xcconfig"; path = "Target Support Files/Pods-EurekaSwift/Pods-EurekaSwift.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +67,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D782CE33AD45120487DF4760 /* Pods_EurekaSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DAB07619E5FF9BE0455D7598 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B4082E3F4C725B5D34F7D61D /* Pods_EurekaSwift.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E0DE6BF72464F1810082E627 = {
 			isa = PBXGroup;
 			children = (
+				E0DE6C3D246554B90082E627 /* screenshots */,
+				E0DE6C3B246553C60082E627 /* README.md */,
 				E0DE6C022464F1810082E627 /* EurekaSwift */,
 				E0DE6C012464F1810082E627 /* Products */,
+				ED2DC092F9BE06AF341DF496 /* Pods */,
+				DAB07619E5FF9BE0455D7598 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +105,86 @@
 		E0DE6C022464F1810082E627 /* EurekaSwift */ = {
 			isa = PBXGroup;
 			children = (
+				E0DE6C2924650C950082E627 /* ViewController */,
+				E0DE6C1D2464FEE10082E627 /* Row */,
 				E0DE6C032464F1810082E627 /* AppDelegate.swift */,
 				E0DE6C052464F1810082E627 /* SceneDelegate.swift */,
-				E0DE6C072464F1810082E627 /* ViewController.swift */,
 				E0DE6C092464F1810082E627 /* Main.storyboard */,
 				E0DE6C0C2464F1850082E627 /* Assets.xcassets */,
 				E0DE6C0E2464F1850082E627 /* LaunchScreen.storyboard */,
 				E0DE6C112464F1850082E627 /* Info.plist */,
 			);
 			path = EurekaSwift;
+			sourceTree = "<group>";
+		};
+		E0DE6C1D2464FEE10082E627 /* Row */ = {
+			isa = PBXGroup;
+			children = (
+				E0DE6C172464FD770082E627 /* CustomCell.xib */,
+				E0DE6C192464FDCB0082E627 /* CustomCell.swift */,
+				E0DE6C1B2464FDEB0082E627 /* CustomRow.swift */,
+				E0DE6C202464FFB60082E627 /* LocationRow.swift */,
+			);
+			path = Row;
+			sourceTree = "<group>";
+		};
+		E0DE6C2924650C950082E627 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E0DE6C3A24654BDB0082E627 /* Modal */,
+				E0DE6C35246545030082E627 /* Base */,
+				E0DE6C34246544EA0082E627 /* Test */,
+				E0DE6C252465094A0082E627 /* RowsExampleViewController.swift */,
+				E0DE6C2724650C820082E627 /* PopViewController.swift */,
+				E0DE6C072464F1810082E627 /* ViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		E0DE6C34246544EA0082E627 /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				E0DE6C32246544C20082E627 /* TestGestureViewController.swift */,
+			);
+			path = Test;
+			sourceTree = "<group>";
+		};
+		E0DE6C35246545030082E627 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				E0DE6C2C246541760082E627 /* BaseViewController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		E0DE6C3A24654BDB0082E627 /* Modal */ = {
+			isa = PBXGroup;
+			children = (
+				E0DE6C36246545240082E627 /* FullScreenNavController.swift */,
+				E0DE6C3824654BC50082E627 /* FullScreenViewController2.swift */,
+			);
+			path = Modal;
+			sourceTree = "<group>";
+		};
+		E0DE6C3D246554B90082E627 /* screenshots */ = {
+			isa = PBXGroup;
+			children = (
+				E0DE6C3E246554CE0082E627 /* 1.png */,
+				E0DE6C41246554CF0082E627 /* 2.png */,
+				E0DE6C40246554CF0082E627 /* 3.png */,
+				E0DE6C3F246554CE0082E627 /* 4.png */,
+				E0DE6C42246554CF0082E627 /* 5.png */,
+			);
+			path = screenshots;
+			sourceTree = "<group>";
+		};
+		ED2DC092F9BE06AF341DF496 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F6122C90F4D3920345ACA835 /* Pods-EurekaSwift.debug.xcconfig */,
+				F09513A9AFD84C21DEECD515 /* Pods-EurekaSwift.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +194,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E0DE6C142464F1850082E627 /* Build configuration list for PBXNativeTarget "EurekaSwift" */;
 			buildPhases = (
+				7367D724516154DCB0A27FDA /* [CP] Check Pods Manifest.lock */,
 				E0DE6BFC2464F1810082E627 /* Sources */,
 				E0DE6BFD2464F1810082E627 /* Frameworks */,
 				E0DE6BFE2464F1810082E627 /* Resources */,
+				C5EA8498E7A77C9E99B3AB7D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -125,21 +247,79 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0DE6C45246554CF0082E627 /* 3.png in Resources */,
 				E0DE6C102464F1850082E627 /* LaunchScreen.storyboard in Resources */,
 				E0DE6C0D2464F1850082E627 /* Assets.xcassets in Resources */,
+				E0DE6C43246554CF0082E627 /* 1.png in Resources */,
+				E0DE6C3C246553C60082E627 /* README.md in Resources */,
+				E0DE6C46246554CF0082E627 /* 2.png in Resources */,
+				E0DE6C47246554CF0082E627 /* 5.png in Resources */,
+				E0DE6C182464FD770082E627 /* CustomCell.xib in Resources */,
+				E0DE6C44246554CF0082E627 /* 4.png in Resources */,
 				E0DE6C0B2464F1810082E627 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		7367D724516154DCB0A27FDA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EurekaSwift-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C5EA8498E7A77C9E99B3AB7D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EurekaSwift/Pods-EurekaSwift-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EurekaSwift/Pods-EurekaSwift-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EurekaSwift/Pods-EurekaSwift-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E0DE6BFC2464F1810082E627 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0DE6C1C2464FDEB0082E627 /* CustomRow.swift in Sources */,
+				E0DE6C262465094A0082E627 /* RowsExampleViewController.swift in Sources */,
 				E0DE6C082464F1810082E627 /* ViewController.swift in Sources */,
+				E0DE6C33246544C20082E627 /* TestGestureViewController.swift in Sources */,
+				E0DE6C2824650C820082E627 /* PopViewController.swift in Sources */,
 				E0DE6C042464F1810082E627 /* AppDelegate.swift in Sources */,
+				E0DE6C2D246541760082E627 /* BaseViewController.swift in Sources */,
+				E0DE6C37246545240082E627 /* FullScreenNavController.swift in Sources */,
+				E0DE6C212464FFB60082E627 /* LocationRow.swift in Sources */,
+				E0DE6C1A2464FDCB0082E627 /* CustomCell.swift in Sources */,
+				E0DE6C3924654BC50082E627 /* FullScreenViewController2.swift in Sources */,
 				E0DE6C062464F1810082E627 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -282,6 +462,7 @@
 		};
 		E0DE6C152464F1850082E627 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F6122C90F4D3920345ACA835 /* Pods-EurekaSwift.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -300,6 +481,7 @@
 		};
 		E0DE6C162464F1850082E627 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F09513A9AFD84C21DEECD515 /* Pods-EurekaSwift.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
