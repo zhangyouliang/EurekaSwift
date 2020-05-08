@@ -5,6 +5,7 @@
 //
 //  不在 navigationController 设置隐藏 navigationBar,是为了兼容导入的第三方库,防止不小心将第三方库的 navigationBar隐藏了
 //  是否隐藏 navigationBar(仅管理继承 BaseViewController 的 ViewController)
+// 
 //  Created by Youliang Zhang on 2020/5/8.
 //  Copyright © 2020 Youliang Zhang. All rights reserved.
 //
@@ -21,7 +22,7 @@ class BaseViewController:UIViewController,UIGestureRecognizerDelegate{
         //  解决去除导航栏,或者自定义返回按钮导致右滑手势失效问题
         self.navigationController?.interactivePopGestureRecognizer?.delegate = self
         // 隐藏导航栏(仅仅修改继承 BaseViewController 的 ViewController)
-        self.fd_prefersNavigationBarHidden = true
+        // self.fd_prefersNavigationBarHidden = true
         // 隐藏导航栏(隐藏 navigationController push 到的全部 ViewController,存在副作用,不太灵活)
         // 举个例子: 我们在 Eureka 自定义 Cell > LocationView 地图里面,发现导航栏丢失了,导致无法返回(该ViewController 未继承 UIViewController !!!)
         // 副作用: 导致全部的 ViewController 丢失了导航栏

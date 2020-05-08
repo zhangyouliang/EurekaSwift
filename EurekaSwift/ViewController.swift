@@ -28,7 +28,7 @@ class ViewController: FormViewController {
             <<< ButtonRow("全屏跳转到 NavViewController(present)") {
                 $0.title = $0.tag
             }.onCellSelection({ (cell, roe) in
-                self.present(FullScreenNavController(), animated: true, completion: nil)
+                self.present(FullScreenViewController2(), animated: true, completion: nil)
             })
             <<< ButtonRow("全屏跳转到 NavViewController(支持(右滑,下滑)返回手势)") {
                 $0.title = $0.tag
@@ -44,6 +44,7 @@ class ViewController: FormViewController {
                 $0.title = $0.tag
             }.onCellSelection({ (cell, roe) in
                 let pvc = PopViewController()
+                pvc.isHWPanModal = true
                 self.definesPresentationContext = true //self is presenting view
                 
                 let nav = UINavigationController.init(rootViewController: pvc)

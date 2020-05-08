@@ -42,6 +42,7 @@ fileprivate class FullScreenViewController: BaseViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.fd_prefersNavigationBarHidden = true
         isHWPanModal = true
 
         

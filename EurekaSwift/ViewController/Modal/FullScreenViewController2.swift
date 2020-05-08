@@ -14,6 +14,7 @@ class FullScreenViewController2: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = .green
+        self.fd_prefersNavigationBarHidden = true
         isHWPanModal = true
         title = "FullScreenViewController2"
     }
